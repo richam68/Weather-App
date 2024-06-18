@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherApp</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>WEATHER APP</h1>
+
+    <div class="navigator">
+      <p class="btn btn-active user-weather">Your Weather</p>
+      <p class="btn search-weather">Search Weather</p>
+    </div>
+
+    <div class="grant-location-access">
+      <img src="./assets/location.png" alt="grant-access" width="80" height="80" loading="lazy">
+      <h2>Grant Location Access</h2>
+      <p>Allow access to get weather information</p>
+      <button class="grant-access">Grant access</button>
+    </div>
+
+    <div class="search-section">
+      <input type="text" placeholder="Search for city..." class="search-text">
+      <div class="search-btn">
+        <img src="./assets/search.png" alt="search" height="20px" width="20px">
+      </div>
+    </div>
+
+   <div class="nav-section">
+    <div class="weather-content ">
+      <div class="city">
+        <p class="city-name"></p>
+        <img src="" alt="" height="22px" width="30px" id="flag">
+      </div>
+      <div class="weather-type"></div>
+      <img src="" alt="weather-img" height="90px" width="90px" class="weather-icon">
+      <div class="weather-temperature"></div>
+    </div>
+    
+    <div class="weather-card">
+      <div class="card">
+        <img src="./assets/wind.png" alt="wind" height="50px" width="50px">
+        <p>WINDSPEED</p>
+        <p class="windspeed">3.09 m/s</p>
+      </div>
+    
+      <div class="card">
+        <img src="./assets/humidity.png" alt="wind" height="50px" width="50px">
+        <p>HUMIDITY</p>
+        <p class="humidity">95%</p>
+      </div>
+    
+      <div class="card">
+        <img src="./assets/cloud.png" alt="wind" height="50px" width="50px">
+        <p>CLOUDS</p>
+        <p class="clouds">96%</p>
+      </div>
+    </div>
+   </div>
+
+   <div class="loading">
+    <img src="./assets/loading.gif" alt="loading" height="120px" width="`120px">
+   </div>
+
+   <div class="error-page">
+    <img src="./assets/not-found.png" alt="not found" height="300px" width="300px">
+    <p>City not found</p>
+   </div>
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
